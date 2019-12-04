@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { createCalendar } from "./helpers";
+import "./App.scss";
+import Hatch from "./Hatch";
 
 function App() {
+  const [hatches, setHatches] = useState([]);
+
+  useEffect(() => {
+    const calendar = localStorage.calendar
+      ? JSON.parse(localStorage.calendar)
+      : createCalendar();
+
+    setHatches(calendar);
+  }, []);
+
+  // Store calendar in localStorage
+  useEffect(() => {
+    hatches.length && localStorage.setItem("calendar", JSON.stringify(hatches));
+  }, [hatches]);
+
+  const handleFlipHatch = id => {
+    const updateHatches = hatches.map(hatch =>
+      hatch.id === id ? { ...hatch, open: !hatch.open } : hatch
+    );
+    setHatches(updateHatches);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {hatches.map(hatch => (
+        <Hatch key={hatch.id} hatch={hatch} handleClick={handleFlipHatch} />
+      ))}
     </div>
   );
 }

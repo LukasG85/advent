@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap');
+
+.App {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0;
+  padding: 40px;
+  background: center / cover url("./img/bcg.jpg");
+}
