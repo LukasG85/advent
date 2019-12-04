@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/advent/static/css/main.996a2747.chunk.css",
+    "main.js": "/advent/static/js/main.5955ca43.chunk.js",
+    "main.js.map": "/advent/static/js/main.5955ca43.chunk.js.map",
+    "runtime-main.js": "/advent/static/js/runtime-main.bff4915d.js",
+    "runtime-main.js.map": "/advent/static/js/runtime-main.bff4915d.js.map",
+    "static/js/2.172bd3e4.chunk.js": "/advent/static/js/2.172bd3e4.chunk.js",
+    "static/js/2.172bd3e4.chunk.js.map": "/advent/static/js/2.172bd3e4.chunk.js.map",
+    "index.html": "/advent/index.html",
+    "precache-manifest.8ec7a38af3c9d741a95c370f656a57ff.js": "/advent/precache-manifest.8ec7a38af3c9d741a95c370f656a57ff.js",
+    "service-worker.js": "/advent/service-worker.js",
+    "static/css/main.996a2747.chunk.css.map": "/advent/static/css/main.996a2747.chunk.css.map",
+    "static/media/App.scss": "/advent/static/media/bcg.3e0663a7.jpg",
+    "static/media/bcg2.jpg": "/advent/static/media/bcg2.64588080.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bff4915d.js",
+    "static/js/2.172bd3e4.chunk.js",
+    "static/css/main.996a2747.chunk.css",
+    "static/js/main.5955ca43.chunk.js"
+  ]
+}
